@@ -1,16 +1,25 @@
 extends ../shared/template
 block content
 
+  #controls
+    #visibility
+      button#hide Hide Form
+      button#show Show Form
+    form(method='post', action='/recipes')
+      input(name='name', type='text', placeholder='chicken', autofocus=true)
+      br
+      input(name='photo', type='text', placeholder='Image url')
+      br
+      input(name='ingredients', type='text', placeholder='Chicken, Water, Eggs')
+      br
+      label Directions
+      br
+      textarea(name='directions')
+      br
+      button Add Recipe
   #recipes
     each recipe in recipes
-      .recipe
-        .photo(style='background-image:url(#{recipe.photo});')
-        .name= recipe.name
-        .ingredients
-          ul
-            each ingredient in recipe.ingredients
-              li= ingredient
-        .directions= recipe.directions
+      include recipe
 
 block scripts
 

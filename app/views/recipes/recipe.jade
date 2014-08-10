@@ -1,0 +1,8 @@
+.recipe
+  .photo(style='background-image:url(#{recipe.photo});')
+  .name= recipe.name
+  .ingredients
+    ul
+      each ingredient in recipe.ingredients
+        li= ingredient
+  .directions= recipe.directions

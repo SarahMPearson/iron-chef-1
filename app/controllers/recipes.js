@@ -8,3 +8,8 @@ exports.index = function(req, res){
   });
 };
 
+exports.create = function(req, res){
+  Recipe.create(req.body, function(err, recipe){
+    res.render('recipes/recipe', {recipe:recipe});
+  });
+};

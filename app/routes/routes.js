@@ -12,7 +12,7 @@ module.exports = function(app, express){
   app.use(methodOverride());
 
   app.get('/', recipes.index);
+  app.post('/recipes', recipes.create);
 
   console.log('Routes Loaded');
 };
-

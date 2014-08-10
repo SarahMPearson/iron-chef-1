@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 *{
   font-family: 'Open Sans', sans-serif;
@@ -7,18 +8,41 @@
   padding: 0px;
 }
 
-body{
-  background-color: #AAAAAA;
-}
 
 header{
   margin: 20px;
 }
 
+
 header h1{
-  font-size: 25px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  background-color: black;
+  padding: 15px;
+  margin: 5px 5px 5px 35px;
 }
 
+button#show{
+  margin: 5px;
+}
+button#hide{
+  margin: 5px 5px 5px 35px;
+}
+
+form {
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+input[type='text'] {
+  width: 150px;
+}
+
+div{
+  margin: auto;
+}
 .recipe{
   display: inline-block;
   width: 250px;
