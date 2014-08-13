@@ -2,19 +2,25 @@
   "name":"BBQ Chicken",
   "photo":"http://static.parade.condenast.com/wp-content/uploads/2014/01/Cilantro-Chicken-1240.jpg",
   "ingredients":["BBQ", "Chicken", "Water"],
-  "directions":"1. Prepare, 2. Cook, 3. Clean"
+  "directions":"1. Prepare, 2. Cook, 3. Clean",
+  "created":{"$date":1407944383710},
+  "category":"Party"
 }
 {
   "name":"Salad",
   "photo":"http://uncooking101.com/site/wp-content/uploads/2011/06/chopped-salad.jpg",
   "ingredients":["Lettuce", "Tomato", "Bacon"],
-  "directions":"1. Prepare, 2. Cook, 3. Clean"
+  "directions":"1. Prepare, 2. Cook, 3. Clean",
+  "created":{"$date":1407944467053},
+  "category":"Skinny Foods"
 }
 
 {
   "name":"Dessert",
   "photo":"http://hostedmedia.reimanpub.com/TOH/Images/Photos/37/300x300/exps12755_QC10129C14.jpg",
   "ingredients":["Flour", "Sugar", "Eggs"],
-  "directions":"1. Prepare, 2. Cook, 3. Clean"
+  "directions":"1. Prepare, 2. Cook, 3. Clean",
+  "created":{"$date":1407944493760},
+  "category":"Breakfast"
 }
 

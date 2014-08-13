@@ -13,6 +13,7 @@ module.exports = function(app, express){
 
   app.get('/', recipes.index);
   app.post('/recipes', recipes.create);
+  app.delete('/recipes/:id', recipes.destroy);
 
   console.log('Routes Loaded');
 };

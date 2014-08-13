@@ -3,20 +3,36 @@ block content
 
   #controls
     #visibility
-      button#hide Hide Form
-      button#show Show Form
+      button.hide#hide Hide Form
+      button.show#show Show Form
     form(method='post', action='/recipes')
+      select(name='category')
+        option Breakfast
+        option Lunch
+        option Dinner
+        option Dessert
+        option Party
+      br
       input(name='name', type='text', placeholder='chicken', autofocus=true)
       br
       input(name='photo', type='text', placeholder='Image url')
       br
+      label Ingredients
       input(name='ingredients', type='text', placeholder='Chicken, Water, Eggs')
       br
       label Directions
       br
       textarea(name='directions')
       br
-      button Add Recipe
+      button.add Add Recipe
+
+  ul#categories
+    li: a(href='#') Breakfast
+    li: a(href='#') Lunch
+    li: a(href='#') Dinner
+    li: a(href='#') Dessert
+    li: a(href='#') Party
+
   #recipes
     each recipe in recipes
       include recipe

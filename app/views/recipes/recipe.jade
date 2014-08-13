@@ -1,8 +1,10 @@
-.recipe
+.recipe(data-recipe-id=recipe._id.toString())
   .photo(style='background-image:url(#{recipe.photo});')
+    button.blue.delete X
   .name= recipe.name
+  .category= recipe.category
   .ingredients
-    ul
+    ul#ingredients
       each ingredient in recipe.ingredients
-        li= ingredient
+        li: a(href='#')= ingredient
   .directions= recipe.directions

@@ -15,12 +15,12 @@ header{
 
 
 header h1{
-  font-size: 35px;
+  font-size: 45px;
   color: white;
   font-family: 'Lobster', cursive;
-  background-color: black;
+  background-color: rgba(0,0,0,.8);
   padding: 15px;
-  margin: 5px 5px 5px 35px;
+  margin: 5px 0px 0px 0px;
 }
 
 button#show{
@@ -44,8 +44,10 @@ div{
   margin: auto;
 }
 .recipe{
+  position: relative;
   display: inline-block;
   width: 250px;
+  vertical-align: top;
   border: 1px solid #111111;
   border-radius: 5px;
   margin: 20px;
@@ -53,6 +55,7 @@ div{
 }
 
 .recipe .photo{
+  position: relative;
   height: 300px;
   background-size: cover;
   border-bottom: 1px solid #111111;
@@ -73,4 +76,20 @@ div{
   position: relative;
   left: 20px;
 }
+.recipe .photo button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 
+form{
+  margin: 20px;
+  padding: 10px;
+  display: inline-block;
+  border: 1px dashed #111111;
+}
+
+form input, form button, form textarea{
+  width: 350px;
+  display: block;
+}
